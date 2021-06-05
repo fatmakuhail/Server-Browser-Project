@@ -1,0 +1,99 @@
+
+ * { box-sizing: border-box; }
+body {font-family: Arial, Helvetica, sans-serif;margin: 0; }
+.header { padding: 80px;text-align: center; background: #1abc9c; color: white; }
+.header h1 { font-size: 40px; }
+.navbar { overflow: hidden; background-color: #333; }
+.navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+.navbar a.right { float: right; }
+.navbar a:hover { background-color: #ddd; color: black; }
+.sb-search {
+    position: center;
+    margin-top: 10px;
+    width: 1000px;
+    height: 60px;
+    float: inline-start;
+    overflow: hidden;
+    
+}
+.sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    z-index: 10;
+    padding: 20px 65px 20px 20px;
+    font-family: inherit;
+    font-size: 20px;
+    color: #2c3e50;
+    }
+    
+    .input[type="search"].sb-search-input {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+    }
+    .sb-search-input::-webkit-input-placeholder {
+        color: #efb480;
+    }
+    
+    .sb-search-input:-moz-placeholder {
+        color: #efb480;
+    }
+    
+    .sb-search-input::-moz-placeholder {
+        color: #efb480;
+    }
+    
+    .sb-search-input:-ms-input-placeholder {
+        color: #efb480;
+    }
+.sb-icon-search,
+.sb-search-submit {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+.sb-search-submit {
+    background: #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     filter: alpha(opacity=0); 
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none; 
+    z-index: -1;
+}
+.sb-icon-search {
+    color: #fff;
+    background: #e67e22;
+    z-index: 90;
+    font-size: 22px;
+    font-family: 'icomoon';
+   
+     font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    
+}
+
+.sb-icon-search:before {
+    content: "\e000";
+}
+
+.row { display: flex; flex-wrap: wrap; }
+.imgDiv { flex: 20%; background-color:#f1f1f1; padding: 20px; }
+.fakeimg { background-color: #aaa; width: 100%; padding: 20px;height:200px; }
+.footer { padding: 20px; text-align: center; background: #ddd; }
